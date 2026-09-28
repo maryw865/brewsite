@@ -8,6 +8,34 @@
 
     <p>Welcome to our brewery page, {{ user }}</p>
 
+    <div class="row">
+
+        <div class="col-md-4">
+            <img
+                src="{{ url_for('static', filename='images/brew1.jpg') }}"
+                class="img-fluid"
+                alt="Brewery image"
+            >
+        </div>
+
+        <div class="col-md-4">
+            <img
+                src="{{ url_for('static', filename='images/brew2.jpg') }}"
+                class="img-fluid"
+                alt="Beer image"
+            >
+        </div>
+
+        <div class="col-md-4">
+            <img
+                src="{{ url_for('static', filename='images/brew3.jpg') }}"
+                class="img-fluid"
+                alt="Brewery image"
+            >
+        </div>
+
+    </div>
+
 </div>
 
 {% endblock main %}
